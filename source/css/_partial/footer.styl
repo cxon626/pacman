@@ -66,18 +66,18 @@ footer
   width 100%
   margin 0 auto
   float left
-  padding-left 3%
+  display: flex
+  justify-content: space-between
   @media phone
     padding-left 20%
   @media mini
     width 18em 
     position absolute  
-    right -3em
+    right 0
     top 3em
   a
     float left
     display block
-    width 14%
     color color-white
     font-size font-size+80
     padding 0.5em
@@ -85,7 +85,7 @@ footer
       padding 0.3em
     &:hover:before
       color color-blue
-    &[title="weibo"]::before,&[title="twitter"]::before,&[title="github"]::before,&[title="facebook"]::before,&[title="linkedin"]::before
+    &[title="weibo"]::before,&[title="twitter"]::before,&[title="github"]::before,&[title="facebook"]::before,&[title="instagram"]::before,&[title="linkedin"]::before
       font-family font-icon-family
       font-smoothing()
     &[title="weibo"]::before
@@ -96,6 +96,8 @@ footer
       content "\f09b"
     &[title="facebook"]::before
       content "\f09a"
+    &[title="instagram"]::before
+      content "\f16d"
     &[title="linkedin"]::before
       content "\f08c"
  
